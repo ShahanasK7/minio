@@ -28,7 +28,7 @@ monitor:
   notify: kullas@ecloudcontrol.com    
 
 properties:
-  revision : 1
+  revision : 2
   TZ : Asia/Kolkata
   MINIO_ROOT_USER : minioadmin
   MINIO_ROOT_PASSWORD :
