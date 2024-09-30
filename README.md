@@ -1,1 +1,1 @@
-# grafana
+# minio
