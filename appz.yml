@@ -33,4 +33,4 @@ properties:
   MINIO_BROWSER : on 
   MINIO_KMS_AUTO_ENCRYPTION : on
   MINIO_KMS_KES_KEY_NAME : global-key
-  revision: 16
+  revision: 17
