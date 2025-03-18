@@ -1,7 +1,7 @@
 app:
   code: MINIO
   name: minio
-  notify: kullas@ecloudcontrol.com
+  notify: skotheri@ecloudcontrol.com
 build:
   build_file: none
   env: DEV
@@ -9,7 +9,7 @@ build:
   output_files: output/*.zip
   version: 2.0
 deploy:
-  context: krishna-ullas/DEV
+  context: ShahanasK7/DEV
   type: statefulset
   replicas: 1
   port:
@@ -27,6 +27,10 @@ volumes:
 properties:
   MINIO_ROOT_PASSWORD:
     vault: MINIO_ROOT_PASSWORD
+  MINIO_SECRET_KEY:
+    vault: MINIO_SECRET_KEY
   MINIO_ROOT_USER: minioadmin
-  MINIO_BROWSER : on
+  MINIO_BROWSER : on 
+  MINIO_KMS_AUTO_ENCRYPTION : on
+  MINIO_KMS_KES_KEY_NAME : global-key
   revision: 15
